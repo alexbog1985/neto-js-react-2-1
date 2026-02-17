@@ -1,9 +1,16 @@
-import React from "react";
-
-export function Toolbar() {
+export function Toolbar({filters, selected, onSelectFilter}) {
     return (
       <>
-        <div>Toolbar</div>
+        <div className="toolbar">
+          {filters.map((filter) => (
+            <button
+              key={filter}
+              className={filter === selected ? 'selected' : ''}
+              onClick={() => onSelectFilter(filter)}>
+              {filter}
+            </button>
+          ))}
+        </div>
       </>
     )
 }
