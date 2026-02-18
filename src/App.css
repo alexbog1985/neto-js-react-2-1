@@ -1,6 +1,34 @@
-#root {
-  max-width: 1280px;
+.portfolio {
+  padding: 2rem 1rem;
+  max-width: 950px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+}
+
+.toolbar {
+  display: flex;
+  gap: 3px;
+  margin-bottom: 2rem;
+}
+
+.filter-button {
+  background: #ffffff;
+  border: 1px solid #393939;
+  color: #292929;
+  padding: 0.4rem 1.2rem;
+  cursor: pointer;
+}
+
+.filter-button:hover {
+  background: #e4e4e4;
+}
+
+.filter-button.selected {
+  background: #5c5c5c;
+  border:none;
+  color: white;
+}
+
+.project-item {
+  width: 300px;
+  display: block;
 }

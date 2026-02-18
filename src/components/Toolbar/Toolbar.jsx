@@ -5,7 +5,7 @@ export function Toolbar({filters, selected, onSelectFilter}) {
           {filters.map((filter) => (
             <button
               key={filter}
-              className={filter === selected ? 'selected' : ''}
+              className={filter === selected ? 'filter-button selected' : 'filter-button'}
               onClick={() => onSelectFilter(filter)}>
               {filter}
             </button>
